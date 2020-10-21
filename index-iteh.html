@@ -221,6 +221,9 @@
 
     }
 
+    $("input[name=http_zahtev]:checked").on('click',prikaziBlok);
+    $("input[name=odabir_tabele]:checked").on('click',resetHTTP);
+
 
     //funkcija posaljiZahtev obrađuje pomoću AJAX-a zahteve koje šaljemo ka serveru
     function posaljiZahtev(){
