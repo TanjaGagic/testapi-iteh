@@ -231,7 +231,7 @@
             switch($("input[name=http_zahtev]:checked")[0].id){
                 case "get":
                     if (tabela=="radio_novosti") {
-                        $.getJSON("http:localhost:8080/rest/api/novosti", function(data){
+                        $.getJSON("http://localhost:8080/rest/api/novosti", function(data){
                             document.getElementById("get_odgovor".innerHTML = JSON.stringify(data, null, 2));
                     })
             }
